@@ -51,7 +51,8 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a href="#bottom">
+                    <a href="#bottom" data-toggle="tooltip" data-html="true"
+                        title="Or call us at <br><strong>+852 12345678</strong>" data-placement="bottom">
                         <button class="btn-sm btn-warning btn-block"> Reserve Table </button>
                     </a>
                     <!-- <button id="#reserve" type="button" class="btn-sm btn-warning btn-block">
@@ -208,7 +209,11 @@
     <script src="node_modules\jquery\dist\jquery.slim.min.js"></script>
     <script src="node_modules\popper.js\dist\umd\popper.min.js"></script>
     <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
-
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+    </script>
 
 </body>
 
